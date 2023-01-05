@@ -1,6 +1,7 @@
 package ru.clevertec.behavioral.strategy;
 
 public class DeveloperRunner {
+
     public static void main(String[] args) {
         Developer developer = new Developer();
         developer.setActivity(new Sleeping());

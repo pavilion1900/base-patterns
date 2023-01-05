@@ -1,6 +1,7 @@
 package ru.clevertec.structural.proxy;
 
 public class RealProject implements Project {
+
     private String url;
 
     public RealProject(String url) {

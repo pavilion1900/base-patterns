@@ -1,6 +1,7 @@
 package ru.clevertec.behavioral.strategy;
 
 public class Developer {
+
     private Activity activity;
 
     public void setActivity(Activity activity) {
