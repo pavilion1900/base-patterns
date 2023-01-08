@@ -1,8 +1,5 @@
 package ru.clevertec.structural.facade;
 
-import lombok.extern.slf4j.Slf4j;
-
-@Slf4j
 public class BugTracker {
 
     private boolean activeSprint;
@@ -12,12 +9,12 @@ public class BugTracker {
     }
 
     public void startSprint() {
-        log.info("Sprint is active");
+        System.out.println("Sprint is active");
         activeSprint = true;
     }
 
     public void finishSprint() {
-        log.info("Sprint is not active");
+        System.out.println("Sprint is not active");
         activeSprint = false;
     }
 }

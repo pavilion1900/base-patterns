@@ -1,29 +1,24 @@
 package ru.clevertec.structural.adapter;
 
-import lombok.AllArgsConstructor;
-
-@AllArgsConstructor
-public class AdapterJavaToDataBase implements DataBase {
-
-    private JavaApplication javaApplication;
+public class AdapterJavaToDataBase extends JavaApplication implements DataBase {
 
     @Override
     public void insert() {
-        javaApplication.saveObject();
+        saveObject();
     }
 
     @Override
     public void update() {
-        javaApplication.updateObject();
+        updateObject();
     }
 
     @Override
     public void delete() {
-        javaApplication.deleteObject();
+        deleteObject();
     }
 
     @Override
     public void select() {
-        javaApplication.loadObject();
+        loadObject();
     }
 }
